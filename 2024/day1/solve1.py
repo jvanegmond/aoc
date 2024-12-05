@@ -1,7 +1,4 @@
-from typing import Generator
-
-
-def yield_lines(file_path: str) -> Generator[str, None, None]:
+def yield_lines(file_path: str):
     with open(file_path, 'r') as filestream:
         for line in filestream:
             yield line.strip('\n')
